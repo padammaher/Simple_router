@@ -1,11 +1,11 @@
 <?php
-// Grabs the URI and breaks it apart in case we have querystring stuff
+
 // $request_uri = explode('?', $_SERVER['SCRIPT_NAME'], 2);
 // $url=explode('/',$_SERVER['SCRIPT_NAME']);
 $basepath = implode('/', array_slice(explode('/', $_SERVER['SCRIPT_NAME']), 0, -1)) . '/';
 $uri = substr($_SERVER['REQUEST_URI'], strlen($basepath));
 // print_r($uri);
- // require 'views/home.php';
+// require 'views/home.php';
 // echo "Route it up!".
 // echo $uri;
 switch ($uri) {
